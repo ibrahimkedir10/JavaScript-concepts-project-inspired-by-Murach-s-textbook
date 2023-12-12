@@ -1,0 +1,12 @@
+body{
+    background-color: blue;
+}
+
+img{
+    width: 50%;
+    height: 50%;
+}
+
+ul{
+    display:none;
+}
