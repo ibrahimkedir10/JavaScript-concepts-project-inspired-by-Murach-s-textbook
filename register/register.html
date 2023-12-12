@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="register.css">
+    <script src="register.js"></script>
+</head>
+<body>
+    <form>
+        <h1>Register For An Account</h1>
+        <br>
+        <label>E-mail:</label>
+        <input id="email">
+        <br>
+        <label>Mobile</label>
+        <input id="mobile">
+        <br>
+        <label> Country</label>
+        <select>
+            <option value=""> Select A Country</option>
+            <option value="Canada">CANADA</option>
+            <option value="Mexico">MEXICO</option>
+            <option value="USA">USA</option>
+        </select>
+        <br>
+        <label> Contact: </label>
+        <input type="radio" id="text" value="text" name="contact">Call
+        <input type="radio" id="call" value="call " name="contact">Text
+        <input type="radio" id="dont" value="dont" name="contact">Don't Contact
+        <br>
+        Agree To terms and Conditions <input type="checkbox" id="agree" value="agree">
+        <br>
+        <button id="submit">Submit</button>
+    </form>
+    
+</body>
+</html>
