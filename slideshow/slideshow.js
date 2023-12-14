@@ -1,4 +1,4 @@
-//window.onload = function () {
+window.onload = function () {
 
     const list = document.getElementById("list");
     const img = document.getElementById("img");
