@@ -1,0 +1,26 @@
+body{
+    background-color: blue;
+}
+
+#div1 {
+    float: left; /* Float div1 to the left */
+   
+    width: 50%;
+    text-align: center;
+}
+
+#div2 {
+    float: right; /* Float div2 to the right */ 
+    width: 50%;
+    height: 400px;
+}
+
+#textArea{
+    width: 90%;
+    height: 400px;
+}
+
+#input{
+    width: 90%;
+    height: 100px;
+}
