@@ -1,0 +1,26 @@
+body{
+    background-color: yellow;
+    align-items: center;
+    text-align: center;
+}
+
+#div1{
+    float: left;
+    margin-top: 10px;
+}
+
+#div2{
+    float: right;
+    margin-top: 10px;
+}
+
+h1{
+    align-items: center;
+    align-content: center;
+    position: relative;
+}
+
+#tripLog{
+    height: 200px;
+    width: 90%;
+}
