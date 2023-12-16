@@ -1,0 +1,22 @@
+body{
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div{
+   
+    position:relative;
+   
+    
+}
+
+#output{
+    border-color: blanchedalmond;
+    border-width: 5px;
+    border-style: dashed;
+    width: 100px;
+    height: 20px;
+ 
+}
