@@ -64,8 +64,9 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     Task.prototype.toString = function () {
-        return this.task + " - Due Date: " + this.dueDate.toDateString();
+        return this.task + " - Due Date: " + this.dueDate.toDateString() + "\n";
     };
+    
 
     var getLocalStorage = function (key) {
         var prototype = {
@@ -150,12 +151,25 @@ document.addEventListener("DOMContentLoaded", function () {
             this.sort();
             var textContent = "";
             for (var i = 0; i < this.task.length; i++) {
-                textContent += this.task[i].toString() + "\n";
+                textContent += this.task[i].toString();
             }
             textArea.value = textContent;
+        
+            var that = this;
+            textArea.querySelectorAll("a").forEach(function (link) {
+                link.onclick = function (evt) {
+                    that.load().deleteTask(this.title).save().display(textArea);
+                    evt.preventDefault();
+                };
+            });
+        
             return this;
         }
+        
+        
     };
 
     initializeTaskList();
 });
+
+
